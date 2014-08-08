@@ -13,14 +13,8 @@
 
 Route::pattern('id', '[0-9]+');
 
-Route::get('/', function() {
-  $news = News::all();
-
-  return View::make('news.list')->with('collection', $news);
-});
-
-
-Route::get('/news/{id}', 'NewsController@show');
-Route::match(array('GET', 'POST'), '/news/create/', 'NewsController@create');
-Route::get('/news/edit/{id}/', array('as' => 'edit', 'uses' => 'NewsController@edit'));
-Route::get('/news/delete/{id}/', array('as' => 'delete', 'uses' => 'NewsController@delete'));
+Route::get('/', 'App\\Controllers\\NewsController@index');
+Route::get('/news/{id}', 'App\\Controllers\\NewsController@show');
+Route::match(array('GET', 'POST'), '/news/create/', 'App\\Controllers\\NewsController@create');
+Route::get('/news/edit/{id}/', array('as' => 'edit', 'uses' => 'App\\Controllers\\NewsController@edit'));
+Route::get('/news/delete/{id}/', array('as' => 'delete', 'uses' => 'App\\Controllers\\NewsController@delete'));

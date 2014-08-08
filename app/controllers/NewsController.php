@@ -1,64 +1,47 @@
 <?php
 
+namespace App\Controllers;
+
+use View;
+use Input;
+use Redirect;
+use Carbon\Carbon;
+use \App\Controllers\BaseController;
+
 class NewsController extends BaseController {
 
-  public $_model;
-
-  public function __construct()
-  {
-    $this->beforeFilter('@filterDataSource');
-  }
-
-
-  public function filterDataSource($route, $request)
-  {
-    switch(Config::get('app.newsStorage')) {
-      default:
-      case 'mysql':
-        $this->_model = 'News';
-        break;
-      case 'file':
-        $this->_model = 'NewsFile';
-        break;
-    }
+  public function index() {
+    $collection = $this->_db->all();
+    return View::make('news.list', compact('collection'));
   }
 
   public function show($id)
   {
-    $model = $this->_model;
-    $resource = $model::find($id);
+    $resource = $this->_db->find($id);
     return View::make('news.show', compact('resource'));
   }
 
   public function edit($id = 0)
   {
-    $model = $this->_model;
-    $resource = $model::find($id);
+    $resource = $this->_db->find($id);
     return View::make('news.edit', compact('resource'));
   }
 
   public function create() {
-    $model = $this->_model;
+    $resource = $this->_db;
     if (Input::has('news')) {
       $data = Input::get('news');
 
-      $resource = $model::firstOrNew(array('id' => isset($data['id']) ? (int) $data['id'] : 0));
-      unset($data['id']);
-      $resource->updated_at = time();
+      if (isset($data['id']) and (int) $data['id'] > 0) {
+        $resource = $this->_db->find($data['id']);
+      }
+
       $resource->title = $data['title'];
       $resource->body = $data['body'];
 
-      if (!$resource->id) {
-        $resource->created_at = time();
-      }
-
-
-      if ($resource->save()) {
+      if ($this->_db->save($resource)) {
         return Redirect::to('/')->with('message', 'Новость сохранена');
       }
-    } else {
-
-      $resource = new $model;
     }
 
     return View::make('news.create', compact('resource'));
@@ -66,8 +49,7 @@ class NewsController extends BaseController {
 
 
   public function delete($id = 0) {
-    $model = $this->_model;
-    if ($model::destroy((int) $id)) {
+    if ($this->_db->destroy((int) $id)) {
       return Redirect::to('/')->with('message', 'Новость удалена');
     }
   }

@@ -8,6 +8,9 @@
     "mnshankar/CSV": "dev-master"
 	},
 	"autoload": {
+    "psr-0": {
+      "App": "app/"
+    },
 		"classmap": [
 			"app/commands",
 			"app/controllers",

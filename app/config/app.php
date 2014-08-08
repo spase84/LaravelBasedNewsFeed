@@ -194,5 +194,6 @@ return array(
 	),
 
   'newsStorage' => 'mysql', // 'mysql' | 'file'
+  'storageFile' => 'news',
 
 );
