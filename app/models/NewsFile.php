@@ -15,8 +15,8 @@ class NewsFile extends Database {
     $fileName = Config::get('app.storageFile');
     $this->_file = storage_path() . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . $fileName . '.csv';
 
-    $this->updated_at = date('c');
-    $this->created_at = date('c');
+    $this->updated_at = Carbon::now();
+    $this->created_at = Carbon::now();
   }
 
   public function all() {

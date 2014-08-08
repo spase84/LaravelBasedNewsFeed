@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a926ed36-1864-4b8d-9259-a4312b84821a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/NewsFile.php" afterPath="$PROJECT_DIR$/app/models/NewsFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/data/news.csv" afterPath="$PROJECT_DIR$/app/storage/data/news.csv" />
     </list>
     <ignored path="newsFeedLaravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,26 +26,7 @@
     <favorites_list name="newsFeedLaravel" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="1832" selection-end="1838" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="1950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -73,10 +56,10 @@
         <option value="$PROJECT_DIR$/app/controllers/NewsController.php" />
         <option value="$PROJECT_DIR$/app/models/Database.php" />
         <option value="$PROJECT_DIR$/app/storage/data/news.csv" />
-        <option value="$PROJECT_DIR$/app/models/NewsFile.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/models/NewsDb.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/app/models/NewsFile.php" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
       </list>
     </option>
   </component>
@@ -381,14 +364,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1276" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23902822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23902822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -492,28 +475,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/NewsFile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="25" selection-start="1548" selection-end="1548" vertical-scroll-proportion="1.5550239" vertical-offset="0" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#30#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="50" selection-start="803" selection-end="803" vertical-scroll-proportion="0.354067" vertical-offset="303" max-vertical-offset="945">
           <folding>
             <element signature="e#35#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="25" selection-start="7574" selection-end="7574" vertical-scroll-proportion="0.79904306" vertical-offset="2424" max-vertical-offset="3075">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,16 +493,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+    <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="1832" selection-end="1838" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="1950">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
+        <state line="195" column="24" selection-start="7573" selection-end="7573" vertical-scroll-proportion="0.79904306" vertical-offset="2424" max-vertical-offset="3075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/NewsFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="38" selection-start="418" selection-end="418" vertical-scroll-proportion="0.430622" vertical-offset="0" max-vertical-offset="1440">
+          <folding>
+            <element signature="e#30#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="28" selection-start="1832" selection-end="1838" vertical-scroll-proportion="0.6698565" vertical-offset="465" max-vertical-offset="1950">
           <folding />
         </state>
       </provider>
