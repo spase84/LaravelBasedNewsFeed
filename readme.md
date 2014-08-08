@@ -1,6 +1,6 @@
 ## News Feed Test Task for Nemo.tv
 
-*** Installation
+**Installation
 
 1) Clone
 
@@ -21,4 +21,4 @@
 9) Enjoy
 
 
-*** THIS IS MY FIRST LARAVEL BASED PROJECT %)
+## THIS IS MY FIRST LARAVEL BASED PROJECT %)
