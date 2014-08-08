@@ -1,6 +1,6 @@
-## News Feed Test Task for Nemo.tv
+## News Feed Test Task for Alice
 
-**Installation
+### Installation
 
 1) Clone
 
