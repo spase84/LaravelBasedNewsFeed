@@ -1,6 +1,7 @@
-## News Feed Test Task for Alice
+## News Feed Test Task for Alice %)
 
-### Installation
+#Installation
+
 
 1) Clone
 
