@@ -23,6 +23,7 @@
     <div class="container">
       <header>
         <a href="{{URL::to('/')}}"><i class="fa fa-home"></i> Главная</a>
+        <span class="pull-right badge">Источник данных: {{Config::get('app.newsStorage')}}</span>
       </header>
       <section id="content">
         @if (Session::has('message'))
