@@ -21,6 +21,6 @@ Route::get('/', function() {
 
 
 Route::get('/news/{id}', 'NewsController@show');
-Route::get('/news/new/', 'NewsController@new');
-Route::get('/news/edit/{id}/', 'NewsController@edit');
-Route::get('/news/delete/{id}/', 'NewsController@delete');
+Route::match(array('GET', 'POST'), '/news/create/', 'NewsController@create');
+Route::get('/news/edit/{id}/', array('as' => 'edit', 'uses' => 'NewsController@edit'));
+Route::get('/news/delete/{id}/', array('as' => 'delete', 'uses' => 'NewsController@delete'));

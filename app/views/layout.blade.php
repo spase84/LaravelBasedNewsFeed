@@ -25,6 +25,9 @@
         <a href="{{URL::to('/')}}"><i class="fa fa-home"></i> Главная</a>
       </header>
       <section id="content">
+        @if (Session::has('message'))
+          <div class="alert alert-info">{{Session::get('message')}}</div>
+        @endif
         @yield('content')
       </section>
     </div>

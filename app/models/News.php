@@ -1,3 +1,6 @@
 <?php
 
-class News extends Eloquent {}
+class News extends Eloquent {
+
+  protected $fillable = array('title', 'body');
+}

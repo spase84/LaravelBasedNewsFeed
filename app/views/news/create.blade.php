@@ -7,7 +7,7 @@
 </div>
 
 <div class="resource">
-  <h3>{{$resource->title}} <span class="date">Редактирование</span></h3>
+  <h3>Добавить новость</h3>
 
   @include('news.form', compact('resource'))
 
